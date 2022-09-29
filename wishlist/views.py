@@ -18,6 +18,7 @@ def show_wishlist(request):
     context = {
     'list_item': data_wishlist_item,
     'name': 'Moza Adirafi Satria Jaka',
+    'NPM': '2106657292',
     'last_login': request.COOKIES['last_login'],
 }
 
