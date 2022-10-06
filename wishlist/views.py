@@ -23,6 +23,16 @@ def show_wishlist(request):
 }
 
     return render(request, "wishlist.html",context)
+
+
+def show_wishlist_ajax(request):
+    context = {
+    'name': 'Moza Adirafi Satria Jaka',
+    'NPM': '2106657292',
+    'last_login': request.COOKIES['last_login'],
+}
+
+    return render(request, "wishlist.html",context)
     
 data_wishlist_item = ItemWishlist.objects.all()
 
